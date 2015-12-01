@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ismael/Gits/build-report/src/macros-endian-std.cpp
+main-head.cpp
+/home/ismael/Gits/build-report/src/main-head.cpp
+main-tail.cpp
+/home/ismael/Gits/build-report/src/main-tail.cpp
+
+include/main-head.cpp
+cstdlib
+-
+cstdio
+-
+cinttypes
+-
+stdlib.h
+-
+stdio.h
+-
+inttypes.h
+-
+print-macros.hpp
+include/print-macros.hpp
+
+include/main-tail.cpp
+
+include/print-macros.hpp
+

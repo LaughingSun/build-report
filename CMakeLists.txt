@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 2.8.9)
+project(build-report)
+
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_COMPILER_IS_GNUCXX TRUE)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-project(build-report)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 set(SOURCE_DIR ${CMAKE_BINARY_DIR}/src)
 set(INCLUDE_DIR ${CMAKE_BINARY_DIR}/include)

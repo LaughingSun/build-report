@@ -1,0 +1,3 @@
+/home/ismael/Gits/build-report/CMakeFiles/macros-all-std.dir
+/home/ismael/Gits/build-report/CMakeFiles/macros-endian-std.dir
+/home/ismael/Gits/build-report/CMakeFiles/macros-inttypes-std.dir
