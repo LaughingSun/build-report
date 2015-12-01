@@ -1,0 +1,58 @@
+
+/*
+
+stdint.h
+Including this file is the "minimum requirement" if you want to work with the specified-width integer types of C99 (i.e. "int32_t", "uint16_t" etc.). If you include this file, you will get the definitions of these types, so that you will be able to use these types in declarations of variables and functions and do operations with these datatypes.
+
+inttypes.h
+If you include this file, you will get everything that stdint.h provides (because inttypes.h includes stdint.h), but you will also get facilities for doing printf and scanf (and "fprintf, "fscanf", and so on.) with these types in a portable way. For example, you will get the "PRIu16" macro so that you can printf an uint16_t integer like this:
+
+*/
+
+#ifndef COMMON_MACROS_INTTYPES_CXX
+# define COMMON_MACROS_INTTYPES_CXX
+
+#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
+
+# ifdef __cplusplus
+#  include <cstdlib>
+#  include <cstdio>
+#  include <cinttypes>
+# else
+#  include <stdlib.h>
+#  include <stdio.h>
+#  include <inttypes.h>
+# endif
+
+int
+main ( int argc, char *[] )
+{
+# endif
+
+#include "print-macros.hpp"
+
+printf( "Preprocessor macros common int types:\n" );
+
+PRINT_SIZEOF(uint8_t)
+PRINT_SIZEOF(uint16_t)
+#ifdef uint24_t
+PRINT_SIZEOF(uint24_t)
+#else
+PRINT_UNDEFINED(uint24_t)
+#endif
+PRINT_SIZEOF(uint32_t)
+#ifdef uint24_t
+PRINT_SIZEOF(uint48_t)
+#else
+PRINT_UNDEFINED(uint48_t)
+#endif
+PRINT_SIZEOF(uint64_t)
+
+printf( "\n" );
+
+#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
+}
+#endif
+
+#endif // COMMON_MACROS_INTTYPES_CXX
+

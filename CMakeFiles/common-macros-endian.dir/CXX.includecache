@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ismael/Gits/common-macros-c/src/common-macros-endian.cpp
+cstdlib
+-
+cstdio
+-
+stdlib.h
+-
+stdio.h
+-
+common-macros-print.hpp
+/home/ismael/Gits/common-macros-c/src/common-macros-print.hpp
+
+include/common-macros-print.hpp
+

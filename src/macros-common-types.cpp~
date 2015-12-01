@@ -1,0 +1,75 @@
+
+/*
+
+stdint.h
+Including this file is the "minimum requirement" if you want to work with the specified-width integer types of C99 (i.e. "int32_t", "uint16_t" etc.). If you include this file, you will get the definitions of these types, so that you will be able to use these types in declarations of variables and functions and do operations with these datatypes.
+
+inttypes.h
+If you include this file, you will get everything that stdint.h provides (because inttypes.h includes stdint.h), but you will also get facilities for doing printf and scanf (and "fprintf, "fscanf", and so on.) with these types in a portable way. For example, you will get the "PRIu16" macro so that you can printf an uint16_t integer like this:
+
+*/
+
+#ifndef COMMON_MACROS_TYPES_CXX
+# define COMMON_MACROS_TYPES_CXX
+
+#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
+
+# ifdef __cplusplus
+#  include <cstdlib>
+#  include <cstdio>
+#  include <cinttypes>
+# else
+#  include <stdlib.h>
+#  include <stdio.h>
+#  include <inttypes.h>
+# endif
+
+int
+main ( int argc, char *[] )
+{
+# endif
+
+#include "print-macros.hpp"
+
+printf( "Preprocessor macros common int types:\n" );
+
+#if defined(__BYTE_ORDER) || defined(__BYTE_ORDER__) || defined(__FLOAT_WORD_ORDER__) \
+|| defined(__ARMEB__) || defined(__THUMBEB__) || defined(__AARCH64EB__) || defined(_MIPSEB) || defined(__MIPSEB) || defined(__MIPSEB__) \
+|| defined(__ARMEL__) || defined(__THUMBEL__) || defined(__AARCH64EL__) || defined(_MIPSEL) || defined(__MIPSEL) || defined(__MIPSEL__)
+
+# ifdef __BYTE_ORDER
+#  if defined(__BIG_ENDIAN) && __BYTE_ORDER == __BIG_ENDIAN
+PRINT_STRING_UNSIGNED(__BYTE_ORDER, __BIG_ENDIAN)
+#  elif defined(__LITTLE_ENDIAN) && __BYTE_ORDER == __LITTLE_ENDIAN
+PRINT_STRING_UNSIGNED(__BYTE_ORDER, __LITTLE_ENDIAN)
+#  elif __BYTE_ORDER != ""
+PRINT_STRING_ULONG(__BYTE_ORDER)
+#  else
+PRINT_DEFINED(__BYTE_ORDER)
+#  endif
+# endif
+
+# ifdef __BYTE_ORDER__
+#  if defined(__ORDER_BIG_ENDIAN__) && __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+PRINT_STRING_UNSIGNED(__BYTE_ORDER__, __ORDER_BIG_ENDIAN__)
+#  elif defined(__ORDER_LITTLE_ENDIAN__) && __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+PRINT_STRING_UNSIGNED(__BYTE_ORDER__, __ORDER_LITTLE_ENDIAN__)
+#  elif __BYTE_ORDER__ != ""
+PRINT_STRING_ULONG(__BYTE_ORDER__)
+#  else
+PRINT_DEFINED(__BYTE_ORDER__)
+#  endif
+# endif
+
+#else
+printf( "no recognized endian macros detected\n" );
+#endif
+
+printf( "\n" );
+
+#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
+}
+#endif
+
+#endif // COMMON_MACROS_TYPES_CXX
+

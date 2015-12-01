@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ismael/Gits/common-macros-c/src/macros-inttypes-common.cpp
+cstdlib
+-
+cstdio
+-
+cinttypes
+-
+stdlib.h
+-
+stdio.h
+-
+inttypes.h
+-
+print-macros.hpp
+/home/ismael/Gits/common-macros-c/src/print-macros.hpp
+
+include/print-macros.hpp
+
