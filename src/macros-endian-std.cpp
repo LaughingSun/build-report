@@ -50,23 +50,7 @@
  **********************************************************************
 */
 
-#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
-
-# ifdef __cplusplus
-using namespace std;
-#  include <cstdlib>
-#  include <cstdio>
-# else
-#  include <stdlib.h>
-#  include <stdio.h>
-# endif
-
-int
-main ( int argc, char *[] )
-{
-# endif
-
-#include "print-macros.hpp"
+#include "main-head.cpp"
 
 printf( "Preprocessor macros endian std:\n" );
 
@@ -161,9 +145,7 @@ printf( "no recognized endian macros detected\n" );
 
 printf( "\n" );
 
-#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
-}
-#endif
+#include "main-tail.cpp"
 
 #endif // MACROS_ENDIAN_STD_CXX
 

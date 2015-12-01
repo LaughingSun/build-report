@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ismael/Gits/build-report/src/macros-all-std.cpp
+main-head.cpp
+/home/ismael/Gits/build-report/src/main-head.cpp
+macros-endian-std.cpp
+/home/ismael/Gits/build-report/src/macros-endian-std.cpp
+macros-inttypes-std.cpp
+/home/ismael/Gits/build-report/src/macros-inttypes-std.cpp
+main-tail.cpp
+/home/ismael/Gits/build-report/src/main-tail.cpp
+
+/home/ismael/Gits/build-report/src/macros-endian-std.cpp
+main-head.cpp
+/home/ismael/Gits/build-report/src/main-head.cpp
+main-tail.cpp
+/home/ismael/Gits/build-report/src/main-tail.cpp
+
+/home/ismael/Gits/build-report/src/macros-inttypes-std.cpp
+main-head.cpp
+/home/ismael/Gits/build-report/src/main-head.cpp
+main-tail.cpp
+/home/ismael/Gits/build-report/src/main-tail.cpp
+
+include/main-tail.cpp
+

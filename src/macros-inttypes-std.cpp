@@ -57,28 +57,7 @@ If you include this file, you will get everything that stdint.h provides (becaus
 
 */
 
-#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
-
-# ifdef __cplusplus
-using namespace std;
-#  include <cstdlib>
-#  include <cstdio>
-#  include <cinttypes>
-# else
-#  include <stdlib.h>
-#  include <stdio.h>
-#  include <inttypes.h>
-# endif
-
-int
-main ( int argc, char *[] )
-{
-#  ifdef __cplusplus
-  printf( "using namespace std\n" );
-#  endif
-# endif
-
-#include "print-macros.hpp"
+#include "main-head.cpp"
 
 printf( "Stdint types:\n" );
 
@@ -282,10 +261,7 @@ PRINT_STRING(SCNxPTR)
 
 printf( "\n" );
 
-
-#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
-}
-#endif
+#include "main-tail.cpp"
 
 #endif // MACROS_INTTYPES_STD_CXX
 
