@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11   CMakeFiles/macros-inttypes-std.dir/src/macros-inttypes-std.cpp.o  -o bin/macros-inttypes-std -rdynamic 
