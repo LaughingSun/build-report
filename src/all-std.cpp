@@ -25,15 +25,15 @@ THE SOFTWARE.
 */
 
 
-#ifndef SIZEOF_ALL_STD_CXX
-# define SIZEOF_ALL_STD_CXX
+#ifndef ALL_STD_CXX
+# define ALL_STD_CXX
 
 #include "main-head.cpp"
 
-#include "sizeof-primitive-std.cpp"
-#include "sizeof-inttypes-std.cpp"
+#include "sizeof-all-std.cpp"
+#include "macros-all-std.cpp"
 
 #include "main-tail.cpp"
 
-#endif // SIZEOF_ALL_STD_CXX
+#endif // ALL_STD_CXX
 

@@ -4,7 +4,7 @@ A build reporting and testing tool good for educational purposes mostly but help
 
 Bascially this is a simple project I created to anchor into my mind some library types and macros.  Coming back to doing more C/C++ and asm coding after 4 years of exclusively scripting I needed to do this.  However I feel this is a great tool also for reference, checking build environments and education for the general dev-pop.  So if it can serve you then welcome.
 
-It is supplied with0ut any warrenty what so ever and free to use and distribute as you please (commerical or otherwise.)  No need to give credit where it is due, just use it as you please.  Of course you must take full responcibility for you use of this project and its code and generated programs and content.  I accept none.
+It is supplied with0ut any warrenty what-so-ever and free to use and distribute as you please (commerical or otherwise.)  Just use it as you please.  Of course you must take full responcibility for you use of this project and its code and generated programs and content.  As I accept none.  See the license for details (https://github.com/LaughingSun/build-report/blob/master/license.txt).
 
 # Get it
 
