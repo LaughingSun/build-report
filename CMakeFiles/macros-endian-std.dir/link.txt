@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11   CMakeFiles/macros-endian-std.dir/src/macros-endian-std.cpp.o  -o bin/macros-endian-std -rdynamic 

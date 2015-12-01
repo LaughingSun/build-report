@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11   CMakeFiles/macros-all-std.dir/src/macros-all-std.cpp.o  -o bin/macros-all-std -rdynamic 
