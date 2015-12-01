@@ -14,7 +14,7 @@ The usual drill: clone locally or download-unzip.
 
 1. Go to your local repo directory  # fe. $ cd build-report
 2. cmake .      # don't miss the dot, no need to create or cd to any subdirectort
-3. make         # I can't think of any reason you would ever want to install this globally but you can if you want
+3. make         # no make install! I can't think of any reason you would ever want to install this globally but you can if you want
 4. ./bin/all    # to test it works, you should get a huge amount of output, so you may want to pipe to more or direct output to a file
 
 all the built files live in the ./bin/ directory, there are many sub-programs as well
