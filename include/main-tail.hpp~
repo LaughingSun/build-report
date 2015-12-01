@@ -1,4 +1,0 @@
-#if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
-}
-#endif
-
