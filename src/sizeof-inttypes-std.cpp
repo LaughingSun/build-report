@@ -1,6 +1,6 @@
 
-#ifndef MACROS_INTTYPES_STD_CXX
-# define MACROS_INTTYPES_STD_CXX
+#ifndef SIZEOF_INTTYPES_STD_CXX
+# define SIZEOF_INTTYPES_STD_CXX
 
 /*
 
@@ -59,133 +59,83 @@ If you include this file, you will get everything that stdint.h provides (becaus
 
 #include "main-head.cpp"
 
-printf( "Stdint limit macros:\n" );
-# ifdef INTMAX_MIN
-PRINT_SIGNED(INTMAX_MIN)
-# endif
-# ifdef INTMAX_MAX
-PRINT_SIGNED(INTMAX_MAX)
-# endif
-# ifdef UINTMAX_MAX
-PRINT_UNSIGNED(UINTMAX_MAX)
-# endif
-# ifdef INTN_MIN
-PRINT_SIGNED(INTN_MIN)
-# endif
-# ifdef INTN_MAX
-PRINT_SIGNED(INTN_MAX)
-# endif
-# ifdef UINTN_MAX
-PRINT_UNSIGNED(UINTN_MAX)
-# endif
-# ifdef INT_LEASTN_MIN
-PRINT_SIGNED(INT_LEASTN_MIN)
-# endif
-# ifdef INT_LEASTN_MAX
-PRINT_SIGNED(INT_LEASTN_MAX)
-# endif
-# ifdef UINT_LEASTN_MAX
-PRINT_UNSIGNED(UINT_LEASTN_MAX)
-# endif
-# ifdef INT_FASTN_MIN
-PRINT_SIGNED(INT_FASTN_MIN)
-# endif
-# ifdef INT_FASTN_MAX
-PRINT_SIGNED(INT_FASTN_MAX)
-# endif
-# ifdef UINT_FASTN_MAX
-PRINT_UNSIGNED(UINT_FASTN_MAX)
-# endif
-# ifdef INTPTR_MIN
-PRINT_SIGNED(INTPTR_MIN)
-# endif
-# ifdef INTPTR_MAX
-PRINT_SIGNED(INTPTR_MAX)
-# endif
-# ifdef UINTPTR_MAX
-PRINT_UNSIGNED(UINTPTR_MAX)
-# endif
-# ifdef SIZE_MAX
-PRINT_UNSIGNED(SIZE_MAX)
-# endif
-# ifdef PTRDIFF_MIN
-PRINT_SIGNED(PTRDIFF_MIN)
-# endif
-# ifdef PTRDIFF_MAX
-PRINT_SIGNED(PTRDIFF_MAX)
-# endif
-# ifdef SIG_ATOMIC_MIN
-PRINT_SIGNED(SIG_ATOMIC_MIN)
-# endif
-# ifdef SIG_ATOMIC_MAX
-PRINT_SIGNED(SIG_ATOMIC_MAX)
-# endif
-# ifdef WCHAR_MIN
-PRINT_SIGNED(WCHAR_MIN)
-# endif
-# ifdef WCHAR_MAX
-PRINT_SIGNED(WCHAR_MAX)
-# endif
-# ifdef WINT_MIN
-PRINT_SIGNED(WINT_MIN)
-# endif
-# ifdef WINT_MAX
-PRINT_SIGNED(WINT_MAX)
-# endif
+printf( "Stdint types:\n" );
 
-printf( "\n" );
+PRINT_SIZEOF(int8_t)
+PRINT_SIZEOF(int16_t)
+//#if has_support(int24_t)
+//PRINT_SIZEOF(int24_t)
+//#endif
+PRINT_SIZEOF(int32_t)
+//#if has_support(int48_t)
+//PRINT_SIZEOF(int48_t)
+//#endif
+PRINT_SIZEOF(int64_t)
 
-printf( "Stdint function-like macros:\n" );
-# ifdef INTMAX_C
-PRINT_DEFINED(INTMAX_C)
-# endif
-# ifdef UINTMAX_C
-PRINT_DEFINED(UINTMAX_C)
-# endif
-# ifdef INTN_C
-PRINT_DEFINED(INTN_C)
-# endif
-# ifdef UINTN_C
-PRINT_DEFINED(UINTN_C)
-# endif
+PRINT_SIZEOF(int_fast8_t)
+PRINT_SIZEOF(int_fast16_t)
+//#if has_support(int_fast24_t)
+//PRINT_SIZEOF(int_fast24_t)
+//#endif
+PRINT_SIZEOF(int_fast32_t)
+//#if has_support(int_fast48_t)
+//PRINT_SIZEOF(int_fast48_t)
+//#endif
+PRINT_SIZEOF(int_fast64_t)
+ 
+PRINT_SIZEOF(int_least8_t)
+PRINT_SIZEOF(int_least16_t)
+//#if has_support(int_least24_t)
+//PRINT_SIZEOF(int_least24_t)
+//#endif
+PRINT_SIZEOF(int_least32_t)
+//#if has_support(int_least48_t)
+//PRINT_SIZEOF(int_least48_t)
+//#endif
+PRINT_SIZEOF(int_least64_t)
 
-printf( "\n" );
+PRINT_SIZEOF(intmax_t)
+PRINT_SIZEOF(intptr_t)
 
-printf( "Inttypes printf / scanf macros:\n" );
-# ifdef PRIxMAX
-PRINT_STRING(PRIxMAX)
-# endif
-# ifdef PRIxN
-PRINT_STRING(PRIxN)
-# endif
-# ifdef PRIxLEASTN
-PRINT_STRING(PRIxLEASTN)
-# endif
-# ifdef PRIxFASTN
-PRINT_STRING(PRIxFASTN)
-# endif
-# ifdef PRIxPTR
-PRINT_STRING(PRIxPTR)
-# endif
-# ifdef SCNxMAX
-PRINT_STRING(SCNxMAX)
-# endif
-# ifdef SCNxN
-PRINT_STRING(SCNxN)
-# endif
-# ifdef SCNxLEASTN
-PRINT_STRING(SCNxLEASTN)
-# endif
-# ifdef SCNxFASTN
-PRINT_STRING(SCNxFASTN)
-# endif
-# ifdef SCNxPTR
-PRINT_STRING(SCNxPTR)
-# endif
+PRINT_SIZEOF(uint8_t)
+PRINT_SIZEOF(uint16_t)
+//#if has_support(uint24_t)
+//PRINT_SIZEOF(uint24_t)
+//#endif
+PRINT_SIZEOF(uint32_t)
+//#if has_support(def uint48_t)
+//PRINT_SIZEOF(uint48_t)
+//#endif
+PRINT_SIZEOF(uint64_t)
+
+PRINT_SIZEOF(uint_fast8_t)
+PRINT_SIZEOF(uint_fast16_t)
+//#if has_support(uint_fast24_t)
+//PRINT_SIZEOF(uint_fast24_t)
+//#endif
+PRINT_SIZEOF(uint_fast32_t)
+//#if has_support(uint_fast48_t)
+//PRINT_SIZEOF(uint_fast48_t)
+//#endif
+PRINT_SIZEOF(uint_fast64_t)
+
+PRINT_SIZEOF(uint_least8_t)
+PRINT_SIZEOF(uint_least16_t)
+//#if has_support(uint_least24_t)
+//PRINT_SIZEOF(uint_least24_t)
+//#endif
+PRINT_SIZEOF(uint_least32_t)
+//#if has_support(uint_least48_t)
+//PRINT_SIZEOF(uint_least48_t)
+//#endif
+PRINT_SIZEOF(uint_least64_t)
+ 
+PRINT_SIZEOF(uintmax_t)
+PRINT_SIZEOF(uintptr_t)
 
 printf( "\n" );
 
 #include "main-tail.cpp"
 
-#endif // MACROS_INTTYPES_STD_CXX
+#endif // SIZEOF_INTTYPES_STD_CXX
 
