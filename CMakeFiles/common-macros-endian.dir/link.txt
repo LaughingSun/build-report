@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/common-macros-endian.dir/src/common-macros-endian.cpp.o  -o bin/common-macros-endian -rdynamic 

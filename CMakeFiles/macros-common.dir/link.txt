@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/macros-common.dir/src/macros-common.cpp.o  -o bin/macros-common -rdynamic 
