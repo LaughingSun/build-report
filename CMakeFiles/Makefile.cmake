@@ -17,6 +17,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.2/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/share/cmake-3.2/Modules/CMakeUnixFindMake.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.2/Modules/Compiler/GNU.cmake"
@@ -40,7 +41,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/macros-inttypes-common.dir/DependInfo.cmake"
-  "CMakeFiles/macros-all-common.dir/DependInfo.cmake"
-  "CMakeFiles/macros-endian-common.dir/DependInfo.cmake"
+  "CMakeFiles/macros-all-std.dir/DependInfo.cmake"
+  "CMakeFiles/macros-endian-std.dir/DependInfo.cmake"
+  "CMakeFiles/macros-inttypes-std.dir/DependInfo.cmake"
   )

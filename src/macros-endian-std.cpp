@@ -1,6 +1,6 @@
 
-#ifndef COMMON_MACROS_ENDIAN_CXX
-# define COMMON_MACROS_ENDIAN_CXX
+#ifndef MACROS_ENDIAN_STD_CXX
+# define MACROS_ENDIAN_STD_CXX
 
 /***************** Detect endianness at compile-time ******************
  * Please notice that the follow list of macros is not exhaustive.    *
@@ -68,7 +68,7 @@ main ( int argc, char *[] )
 
 #include "print-macros.hpp"
 
-printf( "Preprocessor macros endian common:\n" );
+printf( "Preprocessor macros endian std:\n" );
 
 #if defined(__BYTE_ORDER) || defined(__BYTE_ORDER__) || defined(__FLOAT_WORD_ORDER__) \
 || defined(__ARMEB__) || defined(__THUMBEB__) || defined(__AARCH64EB__) || defined(_MIPSEB) || defined(__MIPSEB) || defined(__MIPSEB__) \
@@ -165,5 +165,5 @@ printf( "\n" );
 }
 #endif
 
-#endif // COMMON_MACROS_ENDIAN_CXX
+#endif // MACROS_ENDIAN_STD_CXX
 

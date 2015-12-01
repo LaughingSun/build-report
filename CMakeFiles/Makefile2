@@ -47,114 +47,114 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ismael/Gits/common-macros-c
+CMAKE_SOURCE_DIR = /home/ismael/Gits/build-report
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ismael/Gits/common-macros-c
+CMAKE_BINARY_DIR = /home/ismael/Gits/build-report
 
 #=============================================================================
-# Target rules for target CMakeFiles/macros-all-common.dir
+# Target rules for target CMakeFiles/macros-all-std.dir
 
 # All Build rule for target.
-CMakeFiles/macros-all-common.dir/all:
-	$(MAKE) -f CMakeFiles/macros-all-common.dir/build.make CMakeFiles/macros-all-common.dir/depend
-	$(MAKE) -f CMakeFiles/macros-all-common.dir/build.make CMakeFiles/macros-all-common.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ismael/Gits/common-macros-c/CMakeFiles  1
-	@echo "Built target macros-all-common"
-.PHONY : CMakeFiles/macros-all-common.dir/all
+CMakeFiles/macros-all-std.dir/all:
+	$(MAKE) -f CMakeFiles/macros-all-std.dir/build.make CMakeFiles/macros-all-std.dir/depend
+	$(MAKE) -f CMakeFiles/macros-all-std.dir/build.make CMakeFiles/macros-all-std.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ismael/Gits/build-report/CMakeFiles  1
+	@echo "Built target macros-all-std"
+.PHONY : CMakeFiles/macros-all-std.dir/all
 
 # Include target in all.
-all: CMakeFiles/macros-all-common.dir/all
+all: CMakeFiles/macros-all-std.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/macros-all-common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/macros-all-common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles 0
-.PHONY : CMakeFiles/macros-all-common.dir/rule
+CMakeFiles/macros-all-std.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/macros-all-std.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles 0
+.PHONY : CMakeFiles/macros-all-std.dir/rule
 
 # Convenience name for target.
-macros-all-common: CMakeFiles/macros-all-common.dir/rule
-.PHONY : macros-all-common
+macros-all-std: CMakeFiles/macros-all-std.dir/rule
+.PHONY : macros-all-std
 
 # clean rule for target.
-CMakeFiles/macros-all-common.dir/clean:
-	$(MAKE) -f CMakeFiles/macros-all-common.dir/build.make CMakeFiles/macros-all-common.dir/clean
-.PHONY : CMakeFiles/macros-all-common.dir/clean
+CMakeFiles/macros-all-std.dir/clean:
+	$(MAKE) -f CMakeFiles/macros-all-std.dir/build.make CMakeFiles/macros-all-std.dir/clean
+.PHONY : CMakeFiles/macros-all-std.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/macros-all-common.dir/clean
+clean: CMakeFiles/macros-all-std.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/macros-endian-common.dir
+# Target rules for target CMakeFiles/macros-endian-std.dir
 
 # All Build rule for target.
-CMakeFiles/macros-endian-common.dir/all:
-	$(MAKE) -f CMakeFiles/macros-endian-common.dir/build.make CMakeFiles/macros-endian-common.dir/depend
-	$(MAKE) -f CMakeFiles/macros-endian-common.dir/build.make CMakeFiles/macros-endian-common.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ismael/Gits/common-macros-c/CMakeFiles  2
-	@echo "Built target macros-endian-common"
-.PHONY : CMakeFiles/macros-endian-common.dir/all
+CMakeFiles/macros-endian-std.dir/all:
+	$(MAKE) -f CMakeFiles/macros-endian-std.dir/build.make CMakeFiles/macros-endian-std.dir/depend
+	$(MAKE) -f CMakeFiles/macros-endian-std.dir/build.make CMakeFiles/macros-endian-std.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ismael/Gits/build-report/CMakeFiles  2
+	@echo "Built target macros-endian-std"
+.PHONY : CMakeFiles/macros-endian-std.dir/all
 
 # Include target in all.
-all: CMakeFiles/macros-endian-common.dir/all
+all: CMakeFiles/macros-endian-std.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/macros-endian-common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/macros-endian-common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles 0
-.PHONY : CMakeFiles/macros-endian-common.dir/rule
+CMakeFiles/macros-endian-std.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/macros-endian-std.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles 0
+.PHONY : CMakeFiles/macros-endian-std.dir/rule
 
 # Convenience name for target.
-macros-endian-common: CMakeFiles/macros-endian-common.dir/rule
-.PHONY : macros-endian-common
+macros-endian-std: CMakeFiles/macros-endian-std.dir/rule
+.PHONY : macros-endian-std
 
 # clean rule for target.
-CMakeFiles/macros-endian-common.dir/clean:
-	$(MAKE) -f CMakeFiles/macros-endian-common.dir/build.make CMakeFiles/macros-endian-common.dir/clean
-.PHONY : CMakeFiles/macros-endian-common.dir/clean
+CMakeFiles/macros-endian-std.dir/clean:
+	$(MAKE) -f CMakeFiles/macros-endian-std.dir/build.make CMakeFiles/macros-endian-std.dir/clean
+.PHONY : CMakeFiles/macros-endian-std.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/macros-endian-common.dir/clean
+clean: CMakeFiles/macros-endian-std.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/macros-inttypes-common.dir
+# Target rules for target CMakeFiles/macros-inttypes-std.dir
 
 # All Build rule for target.
-CMakeFiles/macros-inttypes-common.dir/all:
-	$(MAKE) -f CMakeFiles/macros-inttypes-common.dir/build.make CMakeFiles/macros-inttypes-common.dir/depend
-	$(MAKE) -f CMakeFiles/macros-inttypes-common.dir/build.make CMakeFiles/macros-inttypes-common.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ismael/Gits/common-macros-c/CMakeFiles  3
-	@echo "Built target macros-inttypes-common"
-.PHONY : CMakeFiles/macros-inttypes-common.dir/all
+CMakeFiles/macros-inttypes-std.dir/all:
+	$(MAKE) -f CMakeFiles/macros-inttypes-std.dir/build.make CMakeFiles/macros-inttypes-std.dir/depend
+	$(MAKE) -f CMakeFiles/macros-inttypes-std.dir/build.make CMakeFiles/macros-inttypes-std.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ismael/Gits/build-report/CMakeFiles  3
+	@echo "Built target macros-inttypes-std"
+.PHONY : CMakeFiles/macros-inttypes-std.dir/all
 
 # Include target in all.
-all: CMakeFiles/macros-inttypes-common.dir/all
+all: CMakeFiles/macros-inttypes-std.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/macros-inttypes-common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/macros-inttypes-common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles 0
-.PHONY : CMakeFiles/macros-inttypes-common.dir/rule
+CMakeFiles/macros-inttypes-std.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/macros-inttypes-std.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles 0
+.PHONY : CMakeFiles/macros-inttypes-std.dir/rule
 
 # Convenience name for target.
-macros-inttypes-common: CMakeFiles/macros-inttypes-common.dir/rule
-.PHONY : macros-inttypes-common
+macros-inttypes-std: CMakeFiles/macros-inttypes-std.dir/rule
+.PHONY : macros-inttypes-std
 
 # clean rule for target.
-CMakeFiles/macros-inttypes-common.dir/clean:
-	$(MAKE) -f CMakeFiles/macros-inttypes-common.dir/build.make CMakeFiles/macros-inttypes-common.dir/clean
-.PHONY : CMakeFiles/macros-inttypes-common.dir/clean
+CMakeFiles/macros-inttypes-std.dir/clean:
+	$(MAKE) -f CMakeFiles/macros-inttypes-std.dir/build.make CMakeFiles/macros-inttypes-std.dir/clean
+.PHONY : CMakeFiles/macros-inttypes-std.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/macros-inttypes-common.dir/clean
+clean: CMakeFiles/macros-inttypes-std.dir/clean
 .PHONY : clean
 
 #=============================================================================

@@ -42,10 +42,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ismael/Gits/common-macros-c
+CMAKE_SOURCE_DIR = /home/ismael/Gits/build-report
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ismael/Gits/common-macros-c
+CMAKE_BINARY_DIR = /home/ismael/Gits/build-report
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles /home/ismael/Gits/common-macros-c/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles /home/ismael/Gits/build-report/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/common-macros-c/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ismael/Gits/build-report/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -102,115 +102,115 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named macros-all-common
+# Target rules for targets named macros-all-std
 
 # Build rule for target.
-macros-all-common: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 macros-all-common
-.PHONY : macros-all-common
+macros-all-std: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 macros-all-std
+.PHONY : macros-all-std
 
 # fast build rule for target.
-macros-all-common/fast:
-	$(MAKE) -f CMakeFiles/macros-all-common.dir/build.make CMakeFiles/macros-all-common.dir/build
-.PHONY : macros-all-common/fast
+macros-all-std/fast:
+	$(MAKE) -f CMakeFiles/macros-all-std.dir/build.make CMakeFiles/macros-all-std.dir/build
+.PHONY : macros-all-std/fast
 
 #=============================================================================
-# Target rules for targets named macros-endian-common
+# Target rules for targets named macros-endian-std
 
 # Build rule for target.
-macros-endian-common: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 macros-endian-common
-.PHONY : macros-endian-common
+macros-endian-std: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 macros-endian-std
+.PHONY : macros-endian-std
 
 # fast build rule for target.
-macros-endian-common/fast:
-	$(MAKE) -f CMakeFiles/macros-endian-common.dir/build.make CMakeFiles/macros-endian-common.dir/build
-.PHONY : macros-endian-common/fast
+macros-endian-std/fast:
+	$(MAKE) -f CMakeFiles/macros-endian-std.dir/build.make CMakeFiles/macros-endian-std.dir/build
+.PHONY : macros-endian-std/fast
 
 #=============================================================================
-# Target rules for targets named macros-inttypes-common
+# Target rules for targets named macros-inttypes-std
 
 # Build rule for target.
-macros-inttypes-common: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 macros-inttypes-common
-.PHONY : macros-inttypes-common
+macros-inttypes-std: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 macros-inttypes-std
+.PHONY : macros-inttypes-std
 
 # fast build rule for target.
-macros-inttypes-common/fast:
-	$(MAKE) -f CMakeFiles/macros-inttypes-common.dir/build.make CMakeFiles/macros-inttypes-common.dir/build
-.PHONY : macros-inttypes-common/fast
+macros-inttypes-std/fast:
+	$(MAKE) -f CMakeFiles/macros-inttypes-std.dir/build.make CMakeFiles/macros-inttypes-std.dir/build
+.PHONY : macros-inttypes-std/fast
 
-src/macros-all-common.o: src/macros-all-common.cpp.o
-.PHONY : src/macros-all-common.o
-
-# target to build an object file
-src/macros-all-common.cpp.o:
-	$(MAKE) -f CMakeFiles/macros-all-common.dir/build.make CMakeFiles/macros-all-common.dir/src/macros-all-common.cpp.o
-.PHONY : src/macros-all-common.cpp.o
-
-src/macros-all-common.i: src/macros-all-common.cpp.i
-.PHONY : src/macros-all-common.i
-
-# target to preprocess a source file
-src/macros-all-common.cpp.i:
-	$(MAKE) -f CMakeFiles/macros-all-common.dir/build.make CMakeFiles/macros-all-common.dir/src/macros-all-common.cpp.i
-.PHONY : src/macros-all-common.cpp.i
-
-src/macros-all-common.s: src/macros-all-common.cpp.s
-.PHONY : src/macros-all-common.s
-
-# target to generate assembly for a file
-src/macros-all-common.cpp.s:
-	$(MAKE) -f CMakeFiles/macros-all-common.dir/build.make CMakeFiles/macros-all-common.dir/src/macros-all-common.cpp.s
-.PHONY : src/macros-all-common.cpp.s
-
-src/macros-endian-common.o: src/macros-endian-common.cpp.o
-.PHONY : src/macros-endian-common.o
+src/macros-all-std.o: src/macros-all-std.cpp.o
+.PHONY : src/macros-all-std.o
 
 # target to build an object file
-src/macros-endian-common.cpp.o:
-	$(MAKE) -f CMakeFiles/macros-endian-common.dir/build.make CMakeFiles/macros-endian-common.dir/src/macros-endian-common.cpp.o
-.PHONY : src/macros-endian-common.cpp.o
+src/macros-all-std.cpp.o:
+	$(MAKE) -f CMakeFiles/macros-all-std.dir/build.make CMakeFiles/macros-all-std.dir/src/macros-all-std.cpp.o
+.PHONY : src/macros-all-std.cpp.o
 
-src/macros-endian-common.i: src/macros-endian-common.cpp.i
-.PHONY : src/macros-endian-common.i
+src/macros-all-std.i: src/macros-all-std.cpp.i
+.PHONY : src/macros-all-std.i
 
 # target to preprocess a source file
-src/macros-endian-common.cpp.i:
-	$(MAKE) -f CMakeFiles/macros-endian-common.dir/build.make CMakeFiles/macros-endian-common.dir/src/macros-endian-common.cpp.i
-.PHONY : src/macros-endian-common.cpp.i
+src/macros-all-std.cpp.i:
+	$(MAKE) -f CMakeFiles/macros-all-std.dir/build.make CMakeFiles/macros-all-std.dir/src/macros-all-std.cpp.i
+.PHONY : src/macros-all-std.cpp.i
 
-src/macros-endian-common.s: src/macros-endian-common.cpp.s
-.PHONY : src/macros-endian-common.s
+src/macros-all-std.s: src/macros-all-std.cpp.s
+.PHONY : src/macros-all-std.s
 
 # target to generate assembly for a file
-src/macros-endian-common.cpp.s:
-	$(MAKE) -f CMakeFiles/macros-endian-common.dir/build.make CMakeFiles/macros-endian-common.dir/src/macros-endian-common.cpp.s
-.PHONY : src/macros-endian-common.cpp.s
+src/macros-all-std.cpp.s:
+	$(MAKE) -f CMakeFiles/macros-all-std.dir/build.make CMakeFiles/macros-all-std.dir/src/macros-all-std.cpp.s
+.PHONY : src/macros-all-std.cpp.s
 
-src/macros-inttypes-common.o: src/macros-inttypes-common.cpp.o
-.PHONY : src/macros-inttypes-common.o
+src/macros-endian-std.o: src/macros-endian-std.cpp.o
+.PHONY : src/macros-endian-std.o
 
 # target to build an object file
-src/macros-inttypes-common.cpp.o:
-	$(MAKE) -f CMakeFiles/macros-inttypes-common.dir/build.make CMakeFiles/macros-inttypes-common.dir/src/macros-inttypes-common.cpp.o
-.PHONY : src/macros-inttypes-common.cpp.o
+src/macros-endian-std.cpp.o:
+	$(MAKE) -f CMakeFiles/macros-endian-std.dir/build.make CMakeFiles/macros-endian-std.dir/src/macros-endian-std.cpp.o
+.PHONY : src/macros-endian-std.cpp.o
 
-src/macros-inttypes-common.i: src/macros-inttypes-common.cpp.i
-.PHONY : src/macros-inttypes-common.i
+src/macros-endian-std.i: src/macros-endian-std.cpp.i
+.PHONY : src/macros-endian-std.i
 
 # target to preprocess a source file
-src/macros-inttypes-common.cpp.i:
-	$(MAKE) -f CMakeFiles/macros-inttypes-common.dir/build.make CMakeFiles/macros-inttypes-common.dir/src/macros-inttypes-common.cpp.i
-.PHONY : src/macros-inttypes-common.cpp.i
+src/macros-endian-std.cpp.i:
+	$(MAKE) -f CMakeFiles/macros-endian-std.dir/build.make CMakeFiles/macros-endian-std.dir/src/macros-endian-std.cpp.i
+.PHONY : src/macros-endian-std.cpp.i
 
-src/macros-inttypes-common.s: src/macros-inttypes-common.cpp.s
-.PHONY : src/macros-inttypes-common.s
+src/macros-endian-std.s: src/macros-endian-std.cpp.s
+.PHONY : src/macros-endian-std.s
 
 # target to generate assembly for a file
-src/macros-inttypes-common.cpp.s:
-	$(MAKE) -f CMakeFiles/macros-inttypes-common.dir/build.make CMakeFiles/macros-inttypes-common.dir/src/macros-inttypes-common.cpp.s
-.PHONY : src/macros-inttypes-common.cpp.s
+src/macros-endian-std.cpp.s:
+	$(MAKE) -f CMakeFiles/macros-endian-std.dir/build.make CMakeFiles/macros-endian-std.dir/src/macros-endian-std.cpp.s
+.PHONY : src/macros-endian-std.cpp.s
+
+src/macros-inttypes-std.o: src/macros-inttypes-std.cpp.o
+.PHONY : src/macros-inttypes-std.o
+
+# target to build an object file
+src/macros-inttypes-std.cpp.o:
+	$(MAKE) -f CMakeFiles/macros-inttypes-std.dir/build.make CMakeFiles/macros-inttypes-std.dir/src/macros-inttypes-std.cpp.o
+.PHONY : src/macros-inttypes-std.cpp.o
+
+src/macros-inttypes-std.i: src/macros-inttypes-std.cpp.i
+.PHONY : src/macros-inttypes-std.i
+
+# target to preprocess a source file
+src/macros-inttypes-std.cpp.i:
+	$(MAKE) -f CMakeFiles/macros-inttypes-std.dir/build.make CMakeFiles/macros-inttypes-std.dir/src/macros-inttypes-std.cpp.i
+.PHONY : src/macros-inttypes-std.cpp.i
+
+src/macros-inttypes-std.s: src/macros-inttypes-std.cpp.s
+.PHONY : src/macros-inttypes-std.s
+
+# target to generate assembly for a file
+src/macros-inttypes-std.cpp.s:
+	$(MAKE) -f CMakeFiles/macros-inttypes-std.dir/build.make CMakeFiles/macros-inttypes-std.dir/src/macros-inttypes-std.cpp.s
+.PHONY : src/macros-inttypes-std.cpp.s
 
 # Help Target
 help:
@@ -218,20 +218,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... macros-all-std"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... macros-inttypes-common"
-	@echo "... macros-all-common"
-	@echo "... macros-endian-common"
-	@echo "... src/macros-all-common.o"
-	@echo "... src/macros-all-common.i"
-	@echo "... src/macros-all-common.s"
-	@echo "... src/macros-endian-common.o"
-	@echo "... src/macros-endian-common.i"
-	@echo "... src/macros-endian-common.s"
-	@echo "... src/macros-inttypes-common.o"
-	@echo "... src/macros-inttypes-common.i"
-	@echo "... src/macros-inttypes-common.s"
+	@echo "... macros-endian-std"
+	@echo "... macros-inttypes-std"
+	@echo "... src/macros-all-std.o"
+	@echo "... src/macros-all-std.i"
+	@echo "... src/macros-all-std.s"
+	@echo "... src/macros-endian-std.o"
+	@echo "... src/macros-endian-std.i"
+	@echo "... src/macros-endian-std.s"
+	@echo "... src/macros-inttypes-std.o"
+	@echo "... src/macros-inttypes-std.i"
+	@echo "... src/macros-inttypes-std.s"
 .PHONY : help
 
 

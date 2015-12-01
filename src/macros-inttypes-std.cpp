@@ -1,4 +1,7 @@
 
+#ifndef MACROS_INTTYPES_STD_CXX
+# define MACROS_INTTYPES_STD_CXX
+
 /*
 
 cstdint / stdint.h
@@ -53,9 +56,6 @@ If you include this file, you will get everything that stdint.h provides (becaus
 
 
 */
-
-#ifndef COMMON_MACROS_INTTYPES_CXX
-# define COMMON_MACROS_INTTYPES_CXX
 
 #if defined(__INCLUDE_LEVEL__) && ((defined(ADD_MAIN) && (__INCLUDE_LEVEL__ == 1)) || (__INCLUDE_LEVEL__ == 0))
 
@@ -287,5 +287,5 @@ printf( "\n" );
 }
 #endif
 
-#endif // COMMON_MACROS_INTTYPES_CXX
+#endif // MACROS_INTTYPES_STD_CXX
 
